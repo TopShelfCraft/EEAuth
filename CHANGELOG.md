@@ -2,6 +2,12 @@
 
 The format of this file is based on ["Keep a Changelog"](http://keepachangelog.com/). This project adheres to [Semantic Versioning](http://semver.org/). Version numbers follow the pattern: `MAJOR.FEATURE.BUGFIX`
 
+## 5.0.0 - 2024-11-11
+
+### Improved
+
+- Legacy Login is ready for Craft 5!
+
 
 ## 4.0.2 - 2023-11-25
 

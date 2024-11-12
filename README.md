@@ -20,13 +20,14 @@ The `legacy-login/login` custom action stands in for Craft's native `login` form
 
 Legacy Login provides drivers for authenticating legacy users from:
 
+- Craft CMS 5.x
 - Craft CMS 4.x
 - Craft CMS 3.x
 - Craft CMS 2.x
 - ExpressionEngine 2.x
 - WordPress
 
-Two legacy drivers are not yet ported to the Craft 4 version of Legacy Login:
+Two legacy drivers are not yet ported to the Craft 5 version of Legacy Login:
 
 - BigCommerce (Self-hosted)
 - Wellspring
@@ -83,8 +84,8 @@ To customize the plugin's behavior, add a `legacy-login.php` file to your Craft 
 return [
     'handlers' => [
         [
-            'name' => "My Old EE Site",
-            'type' => 'EE2',
+            'name' => "My Old WP Site",
+            'type' => 'WordPress',
             'db' => [ ... ],
         ]
     ]
@@ -108,13 +109,13 @@ What the handler should be called in Legacy Login records.
  
 ##### `type`
 
-`'Craft4'`, `'Craft3'`, `'Craft2'`, `'EE2'`, `'BigCommerce'`, `'Wellspring'`, `'WordPress'`, or a custom (fully qualified) class name.
+`'Craft5'`, `'Craft4'`, `'Craft3'`, `'Craft2'`, `'EE2'`, `'BigCommerce'`, `'Wellspring'`, `'WordPress'`, or a custom (fully qualified) class name.
 
 ##### `createUser`
 
 Whether to create a new Craft user if a matching one doesn't already exist in the system.
 
-(If `false`, only existing Users can be logged in via legacy handlers. Authentication for legacy users that don't match a User in the current system will fail, whether the loginName/password are correct or not.)
+(If `false`, only existing Users can be logged in via legacy handlers. Authentication for legacy users that don't match a User in the current system will fail, even if the loginName/password are correct.)
 
 Default: `true`
 
@@ -147,12 +148,12 @@ For database-type handlers: An array of database config options, following the s
 
 ## What are the system requirements?
 
-Craft 4.0+ and PHP 8.0+
+Craft 5.0+ and PHP 8.0+
 
 
 ## I found a bug.
 
-I'm not surprised... **Legacy Login** is still in beta. Please open a GitHub Issue or submit a PR.
+Please open a GitHub Issue or submit a PR to the `5.x` branch!
 
 
 * * *

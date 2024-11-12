@@ -2,7 +2,7 @@
     "name": "topshelfcraft/legacy-login",
     "description": "Seamless legacy user authentication for Craft CMS",
     "type": "craft-plugin",
-    "version": "4.0.2",
+    "version": "5.0.0",
     "keywords": [
         "craft",
         "cms",
@@ -22,18 +22,10 @@
         {
             "name": "Top Shelf Craft (Michael Rog)",
             "homepage": "https://topshelfcraft.com"
-        },
-        {
-            "name": "Aaron Waldon",
-            "homepage": "https://www.causingeffect.com"
-        },
-        {
-            "name": "TJ Draper",
-            "homepage": "https://buzzingpixel.com"
         }
     ],
     "require": {
-        "craftcms/cms": "^4.2.1",
+        "craftcms/cms": "^5.2",
         "topshelfcraft/base": "^4.0.1"
     },
     "autoload": {
